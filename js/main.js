@@ -169,6 +169,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+
+    var navLinks = document.querySelectorAll('.nav-item.nav-link');
+
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            var navbarCollapse = document.getElementById('navbarCollapse');
+            if (navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+            }
+        });
+    });
+
     // Smooth scroll when clicking on links
     var links = document.querySelectorAll('nav a');
 
