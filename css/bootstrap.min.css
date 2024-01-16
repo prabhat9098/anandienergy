@@ -4765,7 +4765,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(184, 36, 36, 0.55);
+    color: #fff;
     border-color: #fff
 }
 
@@ -8044,8 +8044,8 @@ fieldset:disabled .btn {
 }
 
 .px-4 {
-    padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important
 }
 
 .px-5 {
