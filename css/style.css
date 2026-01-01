@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: hsl(360 100% 50%);;
+    --primary:hsl(298, 49%, 48%);
     --light: #F6F7F8;
     --dark: #1A2A36;
-    --rgb: hsl(350, 100%, 55%);
+    --rgb:hsl(298, 49%, 48%);
 }
 
 .fw-medium {
@@ -17,6 +17,7 @@
 .fw-black {
     font-weight: 900 !important;
 }
+
 
 .back-to-top {
     position: fixed;
@@ -78,6 +79,47 @@
     height: 48px;
 }
 
+/* Top Bar Styling */
+.top-bar {
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.top-bar .navbar-brand h1 {
+    font-size: clamp(0.5rem, 2.3vw, 2rem);
+    color: #333;
+    font-weight: bold;
+}
+
+.top-bar .d-flex {
+    gap: 15px;
+}
+
+.top-bar .btn-lg-square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar .fa {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.top-bar p, .top-bar h6 {
+    margin: 0;
+    color: #555;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+
 .btn-square,
 .btn-sm-square,
 .btn-lg-square {
@@ -92,12 +134,12 @@
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
-    background: linear-gradient(to right, lch(29.6 90 301), hsl(360 100% 50%));
+    background: linear-gradient(to right, lch(29.6 90 301),hsl(298, 49%, 48%));
 }
 
 .navbar .navbar-brand,
 .navbar a.btn {
-    height: 75px;
+    height: 45px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -128,7 +170,7 @@
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
-        padding: 10px 0;
+        padding: 8px 0;
     }
 
     .navbar .navbar-nav {
@@ -282,7 +324,7 @@
 
 .service-item:hover .service-icon {
     color: #FFFFFF;
-    background: linear-gradient(to right, lch(29.6 90 301), hsl(360 100% 50%));
+    background: linear-gradient(to right, lch(29.6 90 301),hsl(298, 49%, 48%));
 }
 
 
